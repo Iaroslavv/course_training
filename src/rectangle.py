@@ -13,7 +13,3 @@ class Rectangle(Figure):
     @property
     def perimeter(self):
         return (self.length + self.width) * 2
-    
-    @property
-    def add_area(self, figure):
-        pass
