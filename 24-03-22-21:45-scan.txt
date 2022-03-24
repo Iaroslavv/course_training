@@ -1,0 +1,9 @@
+Отчет о состоянии системы:
+Пользователи системы: _windowserver, aroslavbulimov, root, _networkd, _softwareupdate, _netbios, _applepay, _spotlight, _datadetectors, _cmiodalassistants, _driverkit, _fpsd, _reportmemoryexception, _nsurlsessiond, _assetcache, _installcoordinationd, _oahd, _ctkd, _appleevents, _gamecontrollerd, _captiveagent, _locationd, _coreaudiod, _mdnsresponder, _hidd, _analyticsd, _trustd, _distnote, _usbmuxd, _timed, _iconservices
+Процессов запущено: 511
+Пользовательских процессов: _windowserver: 3, aroslavbulimov: 302, root: 143, _networkd: 1, _softwareupdate: 4, _netbios: 1, _applepay: 3, _spotlight: 5, _datadetectors: 1, _cmiodalassistants: 9, _driverkit: 2, _fpsd: 3, _reportmemoryexception: 1, _nsurlsessiond: 3, _assetcache: 3, _installcoordinationd: 1, _oahd: 1, _ctkd: 1, _appleevents: 2, _gamecontrollerd: 1, _captiveagent: 1, _locationd: 7, _coreaudiod: 5, _mdnsresponder: 1, _hidd: 1, _analyticsd: 1, _trustd: 1, _distnote: 1, _usbmuxd: 1, _timed: 1, _iconservices: 1
+
+Всего памяти используется: 91.3 mb
+Всего CPU используется: 63.9 %
+Больше всего памяти использует: /Applications/GoogleC
+Больше всего CPU использует: /System/Library/Priva
