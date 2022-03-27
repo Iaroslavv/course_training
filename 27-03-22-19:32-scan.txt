@@ -1,0 +1,8 @@
+Отчет о состоянии системы:
+Пользователи системы: _windowserver, aroslavbulimov, root, _fpsd, _driverkit, _applepay, _nsurlsessiond, _assetcache, _reportmemoryexception, _installcoordinationd, _cmiodalassistants, _netbios, _captiveagent, _oahd, _ctkd, _appleevents, _spotlight, _gamecontrollerd, _softwareupdate, _locationd, _coreaudiod, _networkd, _hidd, _mdnsresponder, _analyticsd, _trustd, _distnote, _usbmuxd, _timed, _iconservices
+Процессов запущено: 430
+Пользовательских процессов: _windowserver: 3, aroslavbulimov: 231, root: 138, _fpsd: 3, _driverkit: 2, _applepay: 3, _nsurlsessiond: 3, _assetcache: 3, _reportmemoryexception: 1, _installcoordinationd: 1, _cmiodalassistants: 9, _netbios: 1, _captiveagent: 1, _oahd: 1, _ctkd: 1, _appleevents: 2, _spotlight: 1, _gamecontrollerd: 1, _softwareupdate: 4, _locationd: 7, _coreaudiod: 5, _networkd: 1, _hidd: 1, _mdnsresponder: 1, _analyticsd: 1, _trustd: 1, _distnote: 1, _usbmuxd: 1, _timed: 1, _iconservices: 1
+Всего памяти используется: 53.6 %
+Всего CPU используется: 51.6 %
+Больше всего памяти использует: /Applications/Visual
+Больше всего CPU использует: /System/Library/Priv
