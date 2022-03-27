@@ -11,7 +11,7 @@ class ProcessParser:
         self.users = users
         self.number_processes = number_processes
         self.users_processes = users_processes
-        self.total_memory = total_memory # mb
+        self.total_memory = total_memory # %
         self.cpu = cpu # %
         self.most_memory = most_memory
         self.most_cpu = most_cpu
@@ -43,13 +43,13 @@ class ProcessParser:
             most_memory[float(memory.replace(',', '.'))] = process_name
             most_cpu[float(cpu.replace(',', '.'))] = process_name
     
-            self.most_memory = ''.join(most_memory.get(max(k for k in most_memory.keys())))[:21]
-            self.most_cpu = ''.join(most_cpu.get(max(k for k in most_cpu.keys())))[:21]
+            self.most_memory = ' '.join(most_memory.get(max(k for k in most_memory.keys())))[:20]
+            self.most_cpu = ' '.join(most_cpu.get(max(k for k in most_cpu.keys())))[:20]
         
 def write_to_file(commands): 
     parser_ = ProcessParser(commands)
-    today = f"{datetime.datetime.utcnow().strftime('%d-%m-%y-%H:%M')}-scan"
-    with open(today + '.txt', 'w') as f:
+    file_name = f"{datetime.datetime.utcnow().strftime('%d-%m-%y-%H:%M')}-scan"
+    with open(file_name + '.txt', 'w') as f:
         parser_.calculate_data()
         keys, values = zip(*parser_.users_processes.items())
         total_user_processes = ', '.join([str(user) + ": " + str(process) for user,process in zip(keys,values)])
@@ -58,11 +58,12 @@ def write_to_file(commands):
         Пользователи системы: {', '.join(parser_.users)}
         Процессов запущено: {len(parser_.number_processes)}
         Пользовательских процессов: {total_user_processes}
-        Всего памяти используется: {round(parser_.total_memory,1)} mb
+        Всего памяти используется: {round(parser_.total_memory, 1)} %
         Всего CPU используется: {round(parser_.cpu, 1)} %
         Больше всего памяти использует: {parser_.most_memory}
         Больше всего CPU использует: {parser_.most_cpu}
         """)
+        print(text_to_write)
         f.write(text_to_write)
 
 if __name__ == '__main__':
